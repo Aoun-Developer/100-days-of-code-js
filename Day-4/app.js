@@ -54,7 +54,37 @@ setTimeout(() => {
 let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 days.forEach(function (days) {
-    console.log(days)
-    console.log(typeof days)
-    document.write(days+ "<br>");
+    // document.write(days+ "<br>");
 })
+
+let list, html;
+list = document.querySelector('.people');
+html = "";
+
+const students = ["aqib", "john", "doe", "sam"];
+
+students.forEach((person) => {
+    html += `<li style="color:red">${person}</li>`
+});
+list.innerHTML = html;
+
+// Call Back Function
+
+const func_1 = function (callback_func) {
+    let value = 20;
+    callback_func();
+}
+func_1(function (value) {
+    // console.log(value);
+})
+
+const mesgOne = (day, time) => {
+    console.log(`Today is ${day}`);
+    time();
+}
+const mesgTwo = (time) => {
+    time = "Morning";
+    console.log(`Good ${time}!`);
+};
+
+mesgOne("Monday", mesgTwo);
