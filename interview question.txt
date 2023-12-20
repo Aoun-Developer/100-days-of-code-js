@@ -1,1 +1,3 @@
 website vs web app
+var / let
+for in / for of
