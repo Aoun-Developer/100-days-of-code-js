@@ -25,4 +25,37 @@ const vowel = (data) => {
 }
 
 let result2 = vowel("hello");
-document.write("2- Count the number of vowels in hello: " + result2);
+// document.write("2- Count the number of vowels in hello: " + result2);
+
+// 3. Question: Convert the first letter of each word in a sentence to uppercase.
+
+const cap = (data) => {
+    let arr = data.toLowerCase().split(" ");
+    let element = "";
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+        
+    }
+    return arr.join(" ");
+}
+
+let result3 = cap("hello world!")
+// document.write("Convert the first letter of each word in hello world into uppercase: <br>" + result3)
+
+// 4. Question: Check if a string is a palindrome.
+
+const palindrome = (data) => {
+    let element = "";
+    for (let i = data.length - 1; i >= 0; i--) {
+        element += data[i];
+    }
+    if (data == element) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+let result4 = palindrome("hello");
+document.write("4- Check if hello is a palindrome: " + result4)
