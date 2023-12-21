@@ -9,7 +9,7 @@ const reverseSTR = (data) => {
 }
 
 let result = reverseSTR("hello");
-// document.write("1- Reverse String hello into: "+result);
+// document.write("1- Reverse String hello into: <br>"+result);
 
 // 2. Question: Count the number of vowels in a given string.
 
@@ -34,7 +34,7 @@ const cap = (data) => {
     let element = "";
     for (let i = 0; i < arr.length; i++) {
         arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
-        
+
     }
     return arr.join(" ");
 }
@@ -58,4 +58,15 @@ const palindrome = (data) => {
 }
 
 let result4 = palindrome("hello");
-document.write("4- Check if hello is a palindrome: " + result4)
+// document.write("4- Check if hello is a palindrome: <br>" + result4)
+
+const polindrome = (data) => {
+    if (reverseSTR(data) == data.toLowerCase()) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+let result5 = polindrome("hello");
+document.write("5- Check if hello is a palindrome: <br>" + result5)
