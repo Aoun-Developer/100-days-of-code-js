@@ -1,3 +1,10 @@
 website vs web app
 var / let
 for in / for of
+difference between primitve type & Non Primitive
+difference between Undefined & NULL
+difference between slice, substr, substring
+does replace() change the string (yes / no)
+replace() is case sensitive or not
+how to use replace with case insensitive
+how to replace all matches with replace method
