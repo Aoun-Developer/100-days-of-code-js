@@ -8,3 +8,6 @@ does replace() change the string (yes / no)
 replace() is case sensitive or not
 how to use replace with case insensitive
 how to replace all matches with replace method
+difference between .at(0) and [0] in array
+difference between .toString() & .join() in array
+how many ways to append in array
