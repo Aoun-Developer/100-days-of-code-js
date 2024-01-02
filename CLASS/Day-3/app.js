@@ -76,7 +76,7 @@ document.write(voteable >= 18 ? "Eligible" : "Not eligible");
 
 document.write("<br>")
 // Nullish Coalescing Operator
-let namee = prompt("enter");
+let namee = "enter";
 let text = "missing";
 let result = namee ?? text;
 document.write(result);

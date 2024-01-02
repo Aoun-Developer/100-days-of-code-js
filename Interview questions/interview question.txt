@@ -1,6 +1,6 @@
 website vs web app
 var / let
-for in / for of
+for in / for of / forEach
 difference between primitve type & Non Primitive
 difference between Undefined & NULL
 difference between slice, substr, substring
@@ -11,3 +11,6 @@ how to replace all matches with replace method
 difference between .at(0) and [0] in array
 difference between .toString() & .join() in array
 how many ways to append in array
+what are false values in boolean
+how to use documen.write on object
+difference between find and filter method

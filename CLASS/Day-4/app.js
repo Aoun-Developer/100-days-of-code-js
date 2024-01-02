@@ -1,90 +1,89 @@
-// Function Types
+// Types of Functions
 
-// 1- Regular Function
-function regularfunction() {
-    document.write("I am Regular Function" + "<br>")
+// 1. Function Declaration
+function func_declar() {
+    document.write("function declaration")
 }
-// regularfunction()
-
-// 2- Function Expression
-const functionExpression = function () {
-    document.write("I am Function Expression" + "<br>")
+func_declar()
+document.write("<br>")
+// 2. Function Expression
+const func_exp = function () {
+    document.write("function expression")
 }
-// functionExpression()
-
-// 3- Arrow Function
-const arrowfunction = () => {
-    document.write("I am Arrow Function" + "<br>")
+func_exp()
+document.write("<br>")
+// 3. Arrow 
+const func_arrow = () => {
+    document.write("function arrow")
 }
-// arrowfunction()
+func_arrow();
 
-// Returning a value
-const addfunc = (a, b) => {
-    let ans = a + b;
-    return ans;
+document.write("<br>")
+// returning values
 
+const return_value = () => {
+    return "return value"
 }
-// let result = document.write(addfunc(4, 5 + "<br>"))
+document.write(return_value());
 
-const calcpod = function (products, tax) {
-    let total = 0;
-    for (let i = 0; i < products.length; i++) {
-        total += products[i] + products[i] * tax;
-    }
-    return total;
+document.write("<br>")
+// SetTimeout
 
-};
-
-let productsANS = calcpod([20, 30, 40], 0.2)
-// console.log(productsANS);
-
-// Set Timeout function
 setTimeout(() => {
-    let employees = ["John", "Mike", "Peter"];
-    // console.log(employees);
-}, 2000);
+    // console.log("set timeout")
+}, 2000)
 
 let box = document.querySelector("#box");
-
 setTimeout(() => {
-    // box.style.height = "200px";
-}, 3000)
+    box.style.border = "2px solid black";
+    box.style.width = "200px";
+}, 2000);
 
-// ForEach Method
-let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+document.write("<br>")
+// setInterval
+setInterval(() => {
+    box.style.width = "100px";
+    box.style.height = "10px";
+}, 1000);
 
-days.forEach(function (days) {
-    // document.write(days+ "<br>");
+setInterval(() => {
+    box.style.width = "150px";
+    box.style.height = "15px";
+}, 2000)
+
+// For Each Method
+let days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+
+days.forEach((data) => {
+    document.write(data + " ,");
 })
 
-let list, html;
-list = document.querySelector('.people');
-html = "";
-
-const students = ["aqib", "john", "doe", "sam"];
-
-students.forEach((person) => {
-    html += `<li style="color:red">${person}</li>`
-});
-list.innerHTML = html;
-
-// Call Back Function
-
-const func_1 = function (callback_func) {
-    let value = 20;
-    callback_func();
+document.write("<br>")
+// FOr In loop
+let fruits = ["apple", "banana", "orange", "grapes", "mango"];
+for (key in fruits) {
+    document.write(key + ": " + fruits[key] + " ,")
 }
-func_1(function (value) {
-    // console.log(value);
-})
 
-const mesgOne = (day, time) => {
-    console.log(`Today is ${day}`);
+document.write("<br>")
+// For Of Loop
+for (key of fruits) {
+    document.write(key + " ")
+}
+
+// Call back function
+
+const mesgOne = (namee, time) => {
+    console.log(`hello, you are ${namee}`);
     time();
 }
-const mesgTwo = (time) => {
-    time = "Morning";
-    console.log(`Good ${time}!`);
-};
-
-mesgOne("Monday", mesgTwo);
+const JS_task = data => {
+    data = "js task";
+    console.log(`your today's ${data}`);
+}
+const node_task = data => {
+    data = "node task";
+    console.log(`your today's ${data}`);
+}
+mesgOne("Aoun", JS_task);
+// mesgOne("Ali", node_task);
