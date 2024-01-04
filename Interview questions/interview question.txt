@@ -14,3 +14,6 @@ how many ways to append in array
 what are false values in boolean
 how to use documen.write on object
 difference between find and filter method
+difference b/w regular and arrow function.
+difference b/w shallow copy , deep copy , reference copy.
+what is nulish coalescing operator.
