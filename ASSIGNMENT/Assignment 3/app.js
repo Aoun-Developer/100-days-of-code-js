@@ -2,10 +2,10 @@
 //    - Q: Given an array of integers, use the map method to square each element and return a new array with the squared values.
 
 const sqr_arr = (data) => {
-    return data.map((elm) => elm * 2)
+    return data.map((elm) => elm * elm)
 }
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// document.write(sqr_arr(arr));
+document.write(sqr_arr(arr));
 
 
 

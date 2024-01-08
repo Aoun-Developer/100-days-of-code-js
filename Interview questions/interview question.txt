@@ -17,3 +17,7 @@ difference between find and filter method
 difference b/w regular and arrow function.
 difference b/w shallow copy , deep copy , reference copy.
 what is nulish coalescing operator.
+what is unary plus operator.
+typeof NAN;
+typeof Infinity;
+object Number === object Number (false) why??

@@ -1,8 +1,12 @@
-const fruits = ["apple", "banana", "orange","apple","grapes"];
+let x = new Number(500);
+let y = new Number(500);
 
-let text1 = fruits.push();
+document.write(x === y);
 
-document.write(text1, "<br>");
+document.write("<br>");
 
+document.write(typeof x);
 
-// clouser
+document.write("<br>");
+
+document.write(typeof y);
